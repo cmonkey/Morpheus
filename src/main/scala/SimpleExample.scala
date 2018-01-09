@@ -15,7 +15,6 @@ object SimpleExample extends App{
     IOUtils.get("http://www.cra-arc.gc.ca/gncy/stts/itstb-sipti/2015/tbl4f-eng.csv"),
     "^ +?(\\d|Age|Under).*")).out.print(10)
 
-  /*
   val zip = IOUtils.get("http://www20.statcan.gc.ca/tables-tableaux/cansim/csv/04270009-eng.zip")
   val visits = DataFrame.read().csv(IOUtils.unzip(zip)(0)).rows().select()
     (row: DataFrameRow[AnyRef, String]) => row.getValue("VISITS").toString.startsWith("Visits")
@@ -34,5 +33,4 @@ object SimpleExample extends App{
     chart.legend.on
     chart.show
   })
-  */
 }
