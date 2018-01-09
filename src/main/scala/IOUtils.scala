@@ -1,8 +1,7 @@
 package com.github.cmonkey.morpheus
 
 import java.io._
-import java.net.{URL, URLConnection}
-import java.util
+import java.net.{URL}
 import java.util.function.Predicate
 import java.util.stream.Collectors
 import java.util.zip.ZipInputStream
